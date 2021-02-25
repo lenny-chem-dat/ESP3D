@@ -131,7 +131,7 @@
 //ESP_SD_NATIVE               1 //esp32 / esp8266
 //ESP_SDIO                    2 //esp32 only
 //ESP_SDFAT                   3 //esp8266 (same as native) / esp32
-//#define SD_DEVICE    ESP_SD_NATIVE
+#define SD_DEVICE    ESP_SDIO
 
 //SDIO mode
 #define SD_ONE_BIT_MODE true
@@ -140,7 +140,7 @@
 //ESP_NO_SD
 //ESP_DIRECT_SD
 //ESP_SHARED_SD
-//#define SD_DEVICE_CONNECTION  ESP_DIRECT_SD
+#define SD_DEVICE_CONNECTION  ESP_DIRECT_SD
 
 //pin if reader has insert detection feature
 //let -1 or comment if none
@@ -154,7 +154,7 @@
 //ESP_SPIFFS_FILESYSTEM       0
 //ESP_FAT_FILESYSTEM          1
 //ESP_LITTLEFS_FILESYSTEM     2
-#define FILESYSTEM_FEATURE ESP_LITTLEFS_FILESYSTEM
+#define FILESYSTEM_FEATURE ESP_SPIFFS_FILESYSTEM
 
 //Allows to mount /FS and /SD under / for FTP server
 //#define GLOBAL_FILESYSTEM_FEATURE
@@ -178,13 +178,13 @@
 #define DIRECT_PIN_FEATURE
 
 //TIMESTAMP_FEATURE: set time system
-//#define TIMESTAMP_FEATURE
+#define TIMESTAMP_FEATURE
 
 //FILESYSTEM_TIMESTAMP_FEATURE: display last write time from Flash files
 //#define FILESYSTEM_TIMESTAMP_FEATURE
 
 //FILESYSTEM_TIMESTAMP_FEATURE:display last write time from SD files
-//#define SD_TIMESTAMP_FEATURE
+#define SD_TIMESTAMP_FEATURE
 
 //MDNS_FEATURE: this feature allow  type the name defined
 //in web browser by default: http:\\esp8266.local and connect
@@ -204,7 +204,7 @@
 #define WEB_UPDATE_FEATURE
 
 //SD_UPDATE_FEATURE: allow to flash/configure fw using SD
-//#define SD_UPDATE_FEATURE
+#define SD_UPDATE_FEATURE
 
 //NOTIFICATION_FEATURE : allow to push notifications
 #define NOTIFICATION_FEATURE
@@ -223,7 +223,7 @@
 //CAMERA_MODEL_M5STACK_WIDE     3
 //CAMERA_MODEL_AI_THINKER       4 e.g. used by ESP32-CAM
 //CAMERA_MODEL_WROVER_KIT       5
-//#define CAMERA_DEVICE CAMERA_MODEL_AI_THINKER
+#define CAMERA_DEVICE CAMERA_MODEL_AI_THINKER
 //#define CAMERA_DEVICE_FLIP_VERTICALY  //comment to disable
 //#define CAMERA_DEVICE_FLIP_HORIZONTALY//comment to disable
 #define CUSTOM_CAMERA_NAME "ESP32-CAM"
