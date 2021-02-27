@@ -31,7 +31,7 @@
 #define ESP_MANUFACTURER_NAME "Espressif Systems"
 #define ESP_MANUFACTURER_URL "http://espressif.com"
 //default name if no mac address is valid
-#define ESP_DEFAULT_NAME "MYESP"
+#define ESP_DEFAULT_NAME "3DSP"
 //if commented name will follow mac address 3 last digits
 //like ESP_XXXXXX (eg:ESP_028E41) to avoid overlap if several ESP3D
 #define ESP_HOST_NAME ESP_DEFAULT_NAME
@@ -92,7 +92,7 @@
 #define WS_DATA_FEATURE
 
 //TIMESTAMP_FEATURE: Time stamp feature on direct SD  files
-//#define TIMESTAMP_FEATURE
+#define TIMESTAMP_FEATURE
 #endif //USE_AS_UPDATER_ONLY
 //Extra features /////////////////////////////////////////////////////////////////////////
 
